@@ -70,7 +70,6 @@ class PeekYou_API
         );
 
         $res = Zend_Json::decode($this->_client->request()->getBody());
-        return $res;
         $res = $res[self::RESULTS];
 
         if ($res[self::STATUS] != self::STATUS_OK) {

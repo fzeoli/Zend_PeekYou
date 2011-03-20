@@ -28,7 +28,6 @@ class PeekYou_API_Result
     const LOCATIONS = 'locations';
     const ESTIMATED_INCOME = 'estimated_income';
     const IS_PRIMARY = 'is_primary';
-    const ESTIMATED_INCOME = 'estimated_income';
     const USERNAMES = 'usernames';
     const WORK = 'work';
     const BIO = 'bio';

@@ -41,6 +41,7 @@ class PeekYou_API_Result
     const ZIPCODE = 'zipcode';
     const SCHOOLS = 'schools';
     const INTERESTS = 'interests';
+    const ADDRESSES = 'addresses';
 
     /**
      * Creates a new PeekYou result.

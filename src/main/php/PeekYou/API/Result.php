@@ -40,6 +40,7 @@ class PeekYou_API_Result
     const ZODIAC = 'zodiac';
     const ZIPCODE = 'zipcode';
     const SCHOOLS = 'schools';
+    const INTERESTS = 'interests';
 
     /**
      * Creates a new PeekYou result.
@@ -173,16 +174,16 @@ class PeekYou_API_Result
      */
     public function getUsernames()
     {
-        $works = $this->_get(self::USERNAMES);
+        $usernames = $this->_get(self::USERNAMES);
 
-        if (!works) {
+        if (!$usernames) {
             return null;
         }
 
         $ret = array();
 
-        foreach ($locations as $location) {
-            $ret[] = new PeekYou_API_Result_Username($location);
+        foreach ($usernames as $username) {
+            $ret[] = new PeekYou_API_Result_Username($username);
         }
 
         return $ret;

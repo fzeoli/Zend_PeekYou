@@ -23,6 +23,7 @@ class PeekYou_API_Result_Location
     const COUNTRY = 'country';
     const REGION = 'region';
     const CITY = 'city';
+    const LOCATION = 'location';
 
     private $_data;
 
@@ -33,7 +34,7 @@ class PeekYou_API_Result_Location
      */
     public function __construct(array $data)
     {
-        $this->_data = $data;
+        $this->_data = $data[self::LOCATION];
     }
 
     /**

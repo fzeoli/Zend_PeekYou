@@ -28,6 +28,9 @@ class PeekYou_API_Result_Link
     const LINK_FEEDS = 7;
     const LINK_ALBUMS_OR_VIDEOS = 8;
 
+    const LINK = 'link';
+    const TYPE = 'type';
+
     private $_data;
 
     /**
@@ -49,7 +52,6 @@ class PeekYou_API_Result_Link
     {
         return $this->_data[self::TYPE];
     }
-
 
     /**
      * Returns the link itself.
